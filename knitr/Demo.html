@@ -1,0 +1,23 @@
+<h1 id="introduction">1 Introduction</h1>
+<p>We can type the introduction to our report here.</p>
+<h1 id="some-calculations">2 Some calculations</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x&lt;-<span class="dv">4</span>
+x</code></pre></div>
+<pre><code>## [1] 4</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x*<span class="dv">2</span></code></pre></div>
+<pre><code>## [1] 8</code></pre>
+<p>What if we just want to print the output of the R code, but not the code itself?</p>
+<pre><code>## [1] 16</code></pre>
+<p>Or perhaps we want to give some code but don't want to include the output - perhaps it is lengthy or we want students to fill in the answer.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x<span class="dv">+20</span></code></pre></div>
+<h1 id="some-plots">3 Some Plots</h1>
+<p>Lets make a plot</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">year&lt;-<span class="kw">seq</span>(<span class="dv">1990</span>,<span class="dv">2015</span>)
+value&lt;-<span class="kw">rnorm</span>(<span class="dv">26</span>)
+<span class="kw">plot</span>(year,value)</code></pre></div>
+<div class="figure">
+<img src="figure/unnamed-chunk-4-1.png" alt="plot of chunk unnamed-chunk-4" />
+<p class="caption">plot of chunk unnamed-chunk-4</p>
+</div>
+<h1 id="conclusion">4 Conclusion</h1>
+<p>Using a few relatively simple commands, we can combine text and R code and generate a report.</p>

@@ -1,0 +1,47 @@
+\documentclass{article} %sets the type of document
+\title{knitr Demo}    %sets title information
+\author{Nicola Reeve}
+\date{July 2015}
+
+\begin{document}  %marks the beginning of the document
+\maketitle      %actually includes the title information in the document
+
+
+\section{Introduction}
+We can type the introduction to our report here.
+
+\section{Some calculations}
+
+<<>>=     %a chunk of R code
+x<-4
+x
+x*2
+@
+
+What if we just want to print the output of the R code, but not the code itself?
+<<echo=FALSE>>=
+x^2
+@
+
+Or perhaps we want to give some code but don't want to include the output - perhaps it is lengthy or we want students to fill in the answer.
+
+<<eval=FALSE>>=
+x+20
+@
+
+\section{Some Plots}
+Lets make a plot
+
+<<>>=
+year<-seq(1990,2015)
+value<-rnorm(26)
+plot(year,value)
+@
+
+
+
+\section{Conclusion}
+Using a few relatively simple commands, we can combine text and R code and generate a report.
+
+
+\end{document}  %marks the end of the document
