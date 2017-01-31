@@ -4,6 +4,7 @@ author: "Nick Shrine"
 date: "January, 2017"
 output: pdf_document
 ---
+
 # 1 Introduction
 We can type the introduction to our report here.
 
