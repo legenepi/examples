@@ -40,6 +40,10 @@ this creates a file listing the imputation and buffer regions of the chunks to i
 
 ./impute5_v1.1.5/impute5_1.1.5_static --h ALL.chr22.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.imp5 --g chr22_phased.bcf --m maps/chr22.b37.gmap.gz --buffer 22:44848451-51244237 --r 22:45099647-51244237 --threads 4 --o chr22_3.bgen --l chr22_3.log
 ```
+I have written a [PBS array job script](run_imputation.sh) to run all chunks as an array job with PBS scheduler thus:
+```bash
+qsub -t 1-4 run_imputation.sh
+```
 
 6. Join the chunks together using cat-bgen from [bgen_v1.1.4](https://www.well.ox.ac.uk/~gav/resources/)
 ```bash
