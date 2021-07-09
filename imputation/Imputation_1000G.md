@@ -54,3 +54,8 @@ cat-bgen -g chr22_{0..3}.bgen -og chr22_imputed.bgen
 ```bash
 qctool -g chr22_imputed.bgen -os chr22_imputed.sample
 ```
+
+8. Calculate SNP statistics
+```bash
+qctool -g chr22_imputed.bgen -snp-stats -osnp chr22_imputed.snpstats
+```
