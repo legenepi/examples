@@ -30,7 +30,7 @@ this creates a file listing the imputation and buffer regions of the chunks to i
 3	22	22:44848451-51244237	22:45099647-51244237	6124383	2397	232078
 ```
 
-5. Impute each chunk from the co-ordinates file
+5. Impute each chunk taking the output chunk number, "--buffer" and "--r" arguments from columns 1, 3 & 4 of the co-ordinates file respectively.
 ```bash
 ./impute5_v1.1.5/impute5_1.1.5_static --h ALL.chr22.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.imp5 --g chr22_phased.bcf --m maps/chr22.b37.gmap.gz --buffer 22:16050075-26981240 --r 22:16050075-26729972 --threads 4 --o chr22_0.bgen --l chr22_0.log
 
